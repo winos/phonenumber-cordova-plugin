@@ -1,7 +1,9 @@
 // Phone Object
+var exec = require('cordova/exec')
+
 var Phone = {
   get: function (success, error) {
-    cordova.exec(success, error, 'PhoneNumber', "get")
+    exec(success, error, 'PhoneNumber', "get")
   }
 }
 
