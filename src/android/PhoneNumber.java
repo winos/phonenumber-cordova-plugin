@@ -65,5 +65,5 @@ public class PhoneNumber extends CordovaPlugin
         callbackContext.error(e.getMessage());
         return false;
       }
-    }
+    });
 }
