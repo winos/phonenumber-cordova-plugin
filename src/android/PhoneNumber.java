@@ -51,7 +51,7 @@ public class PhoneNumber extends CordovaPlugin
     CallbackContext callbackContext) {
       try {
 
-        if (ACTION_GET.equals(action)) {
+        if (action.equals(ACTION_GET)) {
           final JSONObject args = jargs.getJSONObject(0);
 
           TelephonyManager tm = (TelephonyManager) this.cordova.getActivity().getSystemService(Context.TELEPHONY_SERVICE);
