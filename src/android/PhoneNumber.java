@@ -47,7 +47,7 @@ public class PhoneNumber extends CordovaPlugin
   public boolean execute(
     String action,
     JSONArray jargs,
-    final CallbackContext callbackContext () {
+    CallbackContext callbackContext) {
       try {
 
         if (ACTION_GET.equals(action)) {
@@ -65,5 +65,5 @@ public class PhoneNumber extends CordovaPlugin
         callbackContext.error(e.getMessage());
         return false;
       }
-    });
+    }
 }
