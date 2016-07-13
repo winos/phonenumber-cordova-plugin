@@ -60,8 +60,9 @@ public class PhoneNumber extends CordovaPlugin
             callbackContext.success(result);
             return true;
           }
-          callbackContext.error(ACTION_INVALID);
         }
+        callbackContext.error(ACTION_INVALID);
+        return false;
       } catch (Exception e) {
         callbackContext.error(e.getMessage());
         return false;
