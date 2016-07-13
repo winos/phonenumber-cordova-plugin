@@ -53,7 +53,7 @@ public class PhoneNumber extends CordovaPlugin
         if (ACTION_GET.equals(action)) {
           final JSONObject args = jargs.getJSONObject(0);
 
-          TelephonyManager tm = (TelephonyManager) this.cordova.getActivity().getSystemService(Context.TELEPHONY_SERVICE)
+          TelephonyManager tm = (TelephonyManager) this.cordova.getActivity().getSystemService(Context.TELEPHONY_SERVICE);
           String result = getTelephone(tm);
           if (result != null) {
             callbackContext.success(result);
