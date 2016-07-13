@@ -5,4 +5,4 @@ var Phone = {
   }
 }
 
-window.PhoneNumber = Phone
+module.exports = Phone
